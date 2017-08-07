@@ -75,7 +75,7 @@
     </dependencies>
 
     <build>
-        <pluginManagement>
+
             <plugins>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -93,12 +93,13 @@
                     <artifactId>tomcat7-maven-plugin</artifactId>
                     <version>2.2</version>
                     <configuration>
-                        <path>/</path>
-                        <contextReloadable>true</contextReloadable>
+                        <url>http://localhost:8080/manager/text</url>
+                        <server>TomcatServer</server>
+                        <path>/zoliapp</path>
                     </configuration>
                 </plugin>
             </plugins>
-        </pluginManagement>
+
     </build>
  
 
